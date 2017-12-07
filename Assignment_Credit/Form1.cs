@@ -14,10 +14,20 @@ namespace Assignment_Credit
     {
         int total_pence; // declaring variables in global scope
         Decimal total_pound; // declared the variable total_pound as a decimal , as were dealing with money
+        int credit;
+        int value;
+
+      
+
+
+
 
         public Form1()
         {
             InitializeComponent();
+
+
+
         
         }
 
