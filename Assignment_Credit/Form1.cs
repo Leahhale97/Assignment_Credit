@@ -159,7 +159,17 @@ namespace Assignment_Credit
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
-            
+            txt_enter.Clear(); // cleared all the text boxes 
+            txt_number.Clear();
+            txt_credits.Clear();
+            txt_total.Clear();
+            lbl_amount.Text = "0"; // set all the labels to "0"
+            lbl_amount1.Text = "0";
+            lbl_amount2.Text = "0";
+            lbl_amount3.Text = "0";
+            lbl_amount4.Text = "0";
+            lbl_amount5.Text = "0";
+            lbl_amount6.Text = "0"; 
         }
     }
 }
