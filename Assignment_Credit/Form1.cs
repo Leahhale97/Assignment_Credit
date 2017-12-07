@@ -72,7 +72,10 @@ namespace Assignment_Credit
                 lbl_amount1.Text = hold_number.ToString();
 
                 total_pence += 2; // ive added 2 to the total_pence variable
-                txt_total.Text = total_pence.ToString();
+                txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
+
+                total_pound += 0.02m; // ive added 0.02 pence to the total_pound variable
+                txt_credits.Text = total_pound.ToString();
             }
         }
 
@@ -89,7 +92,10 @@ namespace Assignment_Credit
                 lbl_amount2.Text = hold_number.ToString();
 
                 total_pence += 5; // ive added 5 to the total_pence variable
-                txt_total.Text = total_pence.ToString();
+                txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
+
+                total_pound += 0.05m; // ive added 0.05 pence to the total_pound variable
+                txt_credits.Text = total_pound.ToString();
             }
         }
 
@@ -106,7 +112,10 @@ namespace Assignment_Credit
                 lbl_amount3.Text = hold_number.ToString();
 
                 total_pence += 10; // ive added 10 to the total_pence variable
-                txt_total.Text = total_pence.ToString();
+                txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
+
+                total_pound += 0.10m; // ive added 0.10m pence to the total_pound variable
+                txt_credits.Text = total_pound.ToString();
             }
         }
 
@@ -123,7 +132,11 @@ namespace Assignment_Credit
                 lbl_amount4.Text = hold_number.ToString();
 
                 total_pence += 20; // ive added 20 to the total_pence variable
-                txt_total.Text = total_pence.ToString();
+                txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
+
+                total_pound += 0.20m; // ive added 0.20 pence to the total_pound variable
+                txt_credits.Text = total_pound.ToString();
+
             }
         }
 
@@ -140,7 +153,10 @@ namespace Assignment_Credit
                 lbl_amount5.Text = hold_number.ToString();
 
                 total_pence += 50; // ive added 50 to the total_pence variable
-                txt_total.Text = total_pence.ToString();
+                txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
+
+                total_pound += 0.50m; // ive added 0.50 pence to the total_pound variable
+                txt_credits.Text = total_pound.ToString(); 
             }
         }
 
@@ -156,10 +172,10 @@ namespace Assignment_Credit
                 hold_number = hold_number + 1; // when the "pic_1pound" is clicked the label increment by 1 
                 lbl_amount6.Text = hold_number.ToString();
 
-                total_pence += 100; // ive added 1 to the total_pence variable 
+                total_pence += 100; // ive added 100 to the total_pence variable 
                 txt_total.Text = total_pence.ToString();  // displayed the variable (total_pence) in the text box
 
-                total_pound += 1.00m; // ive added 100 to the total_pence variable
+                total_pound += 1.00m; // ive added 1.00 to the total_pound variable
                 txt_credits.Text = total_pound.ToString();
             }
         }
@@ -176,7 +192,10 @@ namespace Assignment_Credit
                 hold_number = hold_number + 1; // when the "pic_1pound" is clicked the label increment by 1 
                 lbl_amount7.Text = hold_number.ToString();
 
-                total_pound += 2.00m; // ive added 200 to the total_pence variable
+                total_pence += 200;  // ive added 200 to the total_pence variable 
+                txt_total.Text = total_pence.ToString();  // displayed the variable (total_pence) in the text box
+
+                total_pound += 2.00m; // ive added 2.00m to the total_pound variable 
                 txt_credits.Text = total_pound.ToString();
             }
         }
