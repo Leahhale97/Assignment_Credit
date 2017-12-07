@@ -12,9 +12,13 @@ namespace Assignment_Credit
 {
     public partial class Form1 : Form
     {
+        int total_pence; // declaring variables in global scope
+        Decimal total_pound; // declared the variable total_pound as a decimal , as were dealing with money
+
         public Form1()
         {
             InitializeComponent();
+        
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,21 +48,17 @@ namespace Assignment_Credit
             {
                 int hold_number = Convert.ToInt32(lbl_amount.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_1p" is clicked the label increments by 1 
-                lbl_amount.Text = hold_number.ToString(); 
+                lbl_amount.Text = hold_number.ToString();
+
+                total_pence += 1; // ive added 1 to the total_pence variable 
+                txt_total.Text = total_pence.ToString();  // displayed the variable (total_pence) in the text box 
+
+                total_pound += 0.01m; // ive added 0.01 pence to the total_pound variable
+                txt_credits.Text = total_pound.ToString();
             }
-          
         }
 
-        private void grp_entered_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_enter_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
+    
         private void pic_2p_Click(object sender, EventArgs e)
         {
             if ((txt_enter.Text) == "0" || txt_enter.Text == "") // if the text box "txt_enter" equals 0 or is null then
@@ -70,6 +70,9 @@ namespace Assignment_Credit
                 int hold_number = Convert.ToInt32(lbl_amount1.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_2p" is clicked the label increments by 1 
                 lbl_amount1.Text = hold_number.ToString();
+
+                total_pence += 2; // ive added 2 to the total_pence variable
+                txt_total.Text = total_pence.ToString();
             }
         }
 
@@ -84,6 +87,9 @@ namespace Assignment_Credit
                 int hold_number = Convert.ToInt32(lbl_amount2.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_5p" is clicked the label increments by 1
                 lbl_amount2.Text = hold_number.ToString();
+
+                total_pence += 5; // ive added 5 to the total_pence variable
+                txt_total.Text = total_pence.ToString();
             }
         }
 
@@ -98,6 +104,9 @@ namespace Assignment_Credit
                 int hold_number = Convert.ToInt32(lbl_amount3.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_10p" is clicked the label increment by 1 
                 lbl_amount3.Text = hold_number.ToString();
+
+                total_pence += 10; // ive added 10 to the total_pence variable
+                txt_total.Text = total_pence.ToString();
             }
         }
 
@@ -112,6 +121,9 @@ namespace Assignment_Credit
                 int hold_number = Convert.ToInt32(lbl_amount4.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_20p" is clicked the label increment by 1 
                 lbl_amount4.Text = hold_number.ToString();
+
+                total_pence += 20; // ive added 20 to the total_pence variable
+                txt_total.Text = total_pence.ToString();
             }
         }
 
@@ -126,6 +138,9 @@ namespace Assignment_Credit
                 int hold_number = Convert.ToInt32(lbl_amount5.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_50p" is clicked the label increment by 1 
                 lbl_amount5.Text = hold_number.ToString();
+
+                total_pence += 50; // ive added 50 to the total_pence variable
+                txt_total.Text = total_pence.ToString();
             }
         }
 
@@ -140,6 +155,12 @@ namespace Assignment_Credit
                 int hold_number = Convert.ToInt32(lbl_amount6.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_1pound" is clicked the label increment by 1 
                 lbl_amount6.Text = hold_number.ToString();
+
+                total_pence += 100; // ive added 1 to the total_pence variable 
+                txt_total.Text = total_pence.ToString();  // displayed the variable (total_pence) in the text box
+
+                total_pound += 1.00m; // ive added 100 to the total_pence variable
+                txt_credits.Text = total_pound.ToString();
             }
         }
 
@@ -154,6 +175,9 @@ namespace Assignment_Credit
                 int hold_number = Convert.ToInt32(lbl_amount7.Text); // hold the value on the label named "lbl_amount"
                 hold_number = hold_number + 1; // when the "pic_1pound" is clicked the label increment by 1 
                 lbl_amount7.Text = hold_number.ToString();
+
+                total_pound += 2.00m; // ive added 200 to the total_pence variable
+                txt_credits.Text = total_pound.ToString();
             }
         }
 
@@ -169,7 +193,8 @@ namespace Assignment_Credit
             lbl_amount3.Text = "0";
             lbl_amount4.Text = "0";
             lbl_amount5.Text = "0";
-            lbl_amount6.Text = "0"; 
+            lbl_amount6.Text = "0";
+            lbl_amount7.Text = "0";
         }
     }
 }
