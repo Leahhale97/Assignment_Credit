@@ -71,12 +71,12 @@
             this.lbl_amount3 = new System.Windows.Forms.Label();
             this.lbl_amount = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt_number = new System.Windows.Forms.TextBox();
             this.txt_enter = new System.Windows.Forms.TextBox();
             this.lbl_number = new System.Windows.Forms.Label();
             this.lbl_enter = new System.Windows.Forms.Label();
             this.btn_reset = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_1p)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_2pound)).BeginInit();
@@ -202,6 +202,7 @@
             this.pic_1p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_1p.TabIndex = 7;
             this.pic_1p.TabStop = false;
+            this.pic_1p.Click += new System.EventHandler(this.pic_1p_Click);
             // 
             // pic_2pound
             // 
@@ -212,6 +213,7 @@
             this.pic_2pound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_2pound.TabIndex = 6;
             this.pic_2pound.TabStop = false;
+            this.pic_2pound.Click += new System.EventHandler(this.pic_2pound_Click);
             // 
             // pic_50p
             // 
@@ -222,6 +224,7 @@
             this.pic_50p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_50p.TabIndex = 5;
             this.pic_50p.TabStop = false;
+            this.pic_50p.Click += new System.EventHandler(this.pic_50p_Click);
             // 
             // pic_20p
             // 
@@ -232,6 +235,7 @@
             this.pic_20p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_20p.TabIndex = 4;
             this.pic_20p.TabStop = false;
+            this.pic_20p.Click += new System.EventHandler(this.pic_20p_Click);
             // 
             // pic_10p
             // 
@@ -242,6 +246,7 @@
             this.pic_10p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_10p.TabIndex = 3;
             this.pic_10p.TabStop = false;
+            this.pic_10p.Click += new System.EventHandler(this.pic_10p_Click);
             // 
             // pic_5p
             // 
@@ -252,6 +257,7 @@
             this.pic_5p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_5p.TabIndex = 2;
             this.pic_5p.TabStop = false;
+            this.pic_5p.Click += new System.EventHandler(this.pic_5p_Click);
             // 
             // pic_2p
             // 
@@ -262,6 +268,7 @@
             this.pic_2p.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_2p.TabIndex = 1;
             this.pic_2p.TabStop = false;
+            this.pic_2p.Click += new System.EventHandler(this.pic_2p_Click);
             // 
             // pic_1pound
             // 
@@ -272,6 +279,7 @@
             this.pic_1pound.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pic_1pound.TabIndex = 0;
             this.pic_1pound.TabStop = false;
+            this.pic_1pound.Click += new System.EventHandler(this.pic_1pound_Click);
             // 
             // grp_entered
             // 
@@ -306,6 +314,7 @@
             this.grp_entered.TabIndex = 1;
             this.grp_entered.TabStop = false;
             this.grp_entered.Text = "Coins Entered";
+            this.grp_entered.Enter += new System.EventHandler(this.grp_entered_Enter);
             // 
             // pic_2quid
             // 
@@ -562,6 +571,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Credits";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(320, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(19, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "p";
+            // 
             // txt_number
             // 
             this.txt_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -581,6 +600,7 @@
             this.txt_enter.TabIndex = 2;
             this.txt_enter.Text = "0";
             this.txt_enter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txt_enter.TextChanged += new System.EventHandler(this.txt_enter_TextChanged);
             // 
             // lbl_number
             // 
@@ -613,16 +633,7 @@
             this.btn_reset.TabIndex = 3;
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(320, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(19, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "p";
+            this.btn_reset.Click += new System.EventHandler(this.btn_reset_Click);
             // 
             // Form1
             // 
