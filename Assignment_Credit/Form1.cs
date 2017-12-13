@@ -17,17 +17,10 @@ namespace Assignment_Credit
         int credit;
         int value;
 
-      
-
-
-
-
+     
         public Form1()
         {
             InitializeComponent();
-
-
-
         
         }
 
@@ -49,7 +42,6 @@ namespace Assignment_Credit
         private void pic_1p_Click(object sender, EventArgs e)
 
         {
-
             if ((txt_enter.Text) == "0" || txt_enter.Text == "" ) // if the text box "txt_enter" equals 0 or is null then
             {
                 MessageBox.Show("You have not set the Cost of a Credit"); // display a message box stating that the user have not set the credit 
@@ -65,29 +57,35 @@ namespace Assignment_Credit
 
                 total_pound += 0.01m; // ive added 0.01 pence to the total_pound variable
                 txt_credits.Text = total_pound.ToString();
+
             }
+            }
+
+        private void txt_enter_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
-    
         private void pic_2p_Click(object sender, EventArgs e)
         {
-            if ((txt_enter.Text) == "0" || txt_enter.Text == "") // if the text box "txt_enter" equals 0 or is null then
-            {
-                MessageBox.Show("You have not set the Cost of a Credit"); // display a message box stating that the user have not set the credit 
-            }
-            else
-            {
-                int hold_number = Convert.ToInt32(lbl_amount1.Text); // hold the value on the label named "lbl_amount"
-                hold_number = hold_number + 1; // when the "pic_2p" is clicked the label increments by 1 
-                lbl_amount1.Text = hold_number.ToString();
+            
+                if ((txt_enter.Text) == "0" || txt_enter.Text == "") // if the text box "txt_enter" equals 0 or is null then
+                {
+                    MessageBox.Show("You have not set the Cost of a Credit"); // display a message box stating that the user have not set the credit 
+                }
+                else
+                {
+                    int hold_number = Convert.ToInt32(lbl_amount1.Text); // hold the value on the label named "lbl_amount"
+                    hold_number = hold_number + 1; // when the "pic_2p" is clicked the label increments by 1 
+                    lbl_amount1.Text = hold_number.ToString();
 
-                total_pence += 2; // ive added 2 to the total_pence variable
-                txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
+                    total_pence += 2; // ive added 2 to the total_pence variable
+                    txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
 
-                total_pound += 0.02m; // ive added 0.02 pence to the total_pound variable
-                txt_credits.Text = total_pound.ToString();
+                    total_pound += 0.02m; // ive added 0.02 pence to the total_pound variable
+                    txt_credits.Text = total_pound.ToString();
+                }
             }
-        }
 
         private void pic_5p_Click(object sender, EventArgs e)
         {
@@ -166,7 +164,7 @@ namespace Assignment_Credit
                 txt_total.Text = total_pence.ToString(); // displayed the variable (total_pence) in the text box
 
                 total_pound += 0.50m; // ive added 0.50 pence to the total_pound variable
-                txt_credits.Text = total_pound.ToString(); 
+                txt_credits.Text = total_pound.ToString();
             }
         }
 
@@ -212,18 +210,29 @@ namespace Assignment_Credit
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
-            txt_enter.Clear(); // cleared all the text boxes 
-            txt_number.Clear();
-            txt_credits.Clear();
-            txt_total.Clear();
-            lbl_amount.Text = "0"; // set all the labels to "0"
-            lbl_amount1.Text = "0";
-            lbl_amount2.Text = "0";
-            lbl_amount3.Text = "0";
-            lbl_amount4.Text = "0";
-            lbl_amount5.Text = "0";
-            lbl_amount6.Text = "0";
-            lbl_amount7.Text = "0";
+            {
+                txt_enter.Clear(); // cleared all the text boxes 
+                txt_number.Clear();
+                txt_credits.Clear();
+                txt_total.Clear();
+                lbl_amount.Text = "0"; // set all the labels to "0"
+                lbl_amount1.Text = "0";
+                lbl_amount2.Text = "0";
+                lbl_amount3.Text = "0";
+                lbl_amount4.Text = "0";
+                lbl_amount5.Text = "0";
+                lbl_amount6.Text = "0";
+                lbl_amount7.Text = "0";
+            }
         }
     }
-}
+    }
+
+
+   
+  
+
+
+
+
+

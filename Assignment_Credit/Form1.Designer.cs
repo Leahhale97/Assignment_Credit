@@ -314,7 +314,6 @@
             this.grp_entered.TabIndex = 1;
             this.grp_entered.TabStop = false;
             this.grp_entered.Text = "Coins Entered";
-            
             // 
             // pic_2quid
             // 
@@ -600,7 +599,7 @@
             this.txt_enter.TabIndex = 2;
             this.txt_enter.Text = "0";
             this.txt_enter.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            
+            this.txt_enter.TextChanged += new System.EventHandler(this.txt_enter_TextChanged);
             // 
             // lbl_number
             // 
